@@ -227,7 +227,7 @@ var UIController = (function() {
         document.getElementById(domStrings.percentageBox).textContent =
           obj.percentage + "%";
       } else {
-        document.getElementById(domStrings.percentageBox).textContent = "---";
+        document.getElementById(domStrings.percentageBox).textContent = "-";
       }
     }
   };

@@ -23,7 +23,7 @@ body{
 .top{
     /* background-color: blueviolet; */
     width: 80%;
-    margin: 0 auto;
+    margin: 1% auto;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 3;
@@ -85,6 +85,7 @@ body{
 
 #expensePer{
     font-size: 16px;
+    text-align: center;
     background-color: rgb(247, 106, 96);
     display: inline;
     padding: 2%;
