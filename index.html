@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="monthBox">
+          <p class="budgetMonth" id="budgetMonth">
+          </p>
+          <p class="budget">Amount Remaining</p>
+          <p class="budget" id="budget">
+            0
+          </p>
+        </div>
+        <div class="incomeExpense">
+          <div class="box income">
+            <div class="incomeText">
+              <p>
+                income
+              </p>
+            </div>
+            <div class="incomeAmount">
+              <p id="incomeAmount">0.00</p>
+            </div>
+          </div>
+          <div class="box expense">
+            <div class="expenseText">
+              <p>
+                expense
+              </p>
+            </div>
+            <div class="expenseAmount">
+              <p id="expenseAmount">
+                -0.00
+                <p id="expensePer">
+                  ---
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="form">
+          <form action="">
+            <select name="budgetType" id="budgetType" class="inputType">
+              <option value="income" selected> + </option>
+              <option value="expense"> - </option>
+            </select>
+            <input
+              type="text"
+              name="description"
+              id="description"
+              placeholder="Add Description"
+              class="inputType"
+            />
+            <input
+              type="number"
+              name="price"
+              id="price"
+              placeholder="Value"
+              class="inputType"
+            />
+            <button type="button" class="inputType clickButton" id="inputType">
+              +
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="showIncome">
+          <div class="heading">
+            <p>INCOME</p>
+          </div>
+          <div id="income">
+            <!-- <div class="listContainer" id="income-0">
+              <div class="elementDesc">
+                <p>Salary</p>
+              </div>
+              <div class="elementValue">
+                <p>36000</p>
+              </div>
+              <div class="delete">
+                <button>-</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="showExpense">
+          <div class="heading">
+            <p>EXPENSES</p>
+          </div>
+          <div id="expense">
+            <!-- <div class="listContainer" id="expense-0">
+              <div class="elementDesc">
+                <p>Utility</p>
+              </div>
+              <div class="elementValue">
+                <p>36000</p>
+              </div>
+              <div class="delete">
+                <button>-</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

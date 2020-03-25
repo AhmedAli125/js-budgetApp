@@ -1,0 +1,201 @@
+@font-face{
+    font-family: gothic;
+    src: url(./fonts/Century\ Gothic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: gothic;
+}
+
+body{
+    /* background-image: url(./background-image.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top{
+    /* background-color: blueviolet; */
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+}
+
+.monthBox > p{
+    text-align: center;
+}
+
+.monthBox .budget{
+    font-size: 32px;
+}
+
+.top >.incomeExpense > .box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 1% auto;
+    width: 50%;
+    padding: 2%;
+}
+
+.income{
+    background-color: #0A79DF;
+}
+
+.expense{
+    background-color: #E44236;
+}
+
+.income p, .expense p{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.incomeAmount > #incomeAmount, .expenseAmount > #expenseAmount{
+    text-align: right;
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 15%;
+}
+
+.budgetMonth{
+    background-color: rgba(255, 255, 255, 0.726);
+    color: #0A79DF;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1% 0;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.expenseAmount{
+    display: grid;
+    grid-template-columns: 2fr 0.2fr;
+}
+
+#expensePer{
+    font-size: 16px;
+    background-color: rgb(247, 106, 96);
+    display: inline;
+    padding: 2%;
+    border-radius: 5px;
+    margin-right: -20%;
+}
+
+.input{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #616C6F;
+    padding: 1%;
+}
+
+.input > .form > form{
+    display: grid;
+    grid-template-columns: 0.5fr 7fr 1fr 1fr;
+    grid-template-rows: 1;
+    grid-gap: 0.5%;
+}
+
+.inputType{
+    border-radius: 3px;
+    border: 1px;
+    font-size: 18px;
+    padding: 1%;
+    background-color: white;
+}
+
+
+.bottom{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+    grid-column-gap: 5%;
+    background-color: rgba(234, 240, 241, 0.705);
+    padding: 2%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 2%;
+}
+
+.showIncome > .heading > p{
+    color: #0A79DF;
+}
+
+.showExpense > .heading > p{
+    color: #E44236;
+}
+
+#income, #expense{
+    height: 20vh;
+    overflow: auto;
+}
+
+.listContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    padding: 2%;
+    border-bottom: 1px solid;
+}
+
+.listContainer > .elementDesc{
+    margin-left: 5%;
+}
+
+.listContainer > .elementValue{
+    text-align: right;
+}
+
+.showIncome >.listContainer .elementValue{
+    color:#0A79DF;
+}
+
+.showExpense >.listContainer .elementValue{
+    color:#E44236;
+}
+
+.listContainer > .delete > button{
+    font-size: 18px;
+    padding: 2% 7%;
+    border: 1px;
+    background-color: rgba(228, 66, 54, 0.678);
+    color: white;
+    font-weight: 800;
+    border-radius: 2px;
+    margin-left: 10%;
+}
+
+.listContainer > .delete{
+    visibility: hidden;
+}
+
+.listContainer:hover .delete{
+    visibility: visible;
+}
+
+.listContainer:hover{
+    background-color: #EAF0F1;
+}
+
+
+/*adding scroll option to income and expense div*/
+
+.bottom > div#income, .bottom > div#expense{
+    overflow-y:scroll;
+}
